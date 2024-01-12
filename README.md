@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# Серверное приложение для редактирования списка клиентских серверов
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Это приложение разработано с использованием серверного рендеринга (SSR) с использованием Nuxt.js и Vue 3 composition API. Оно предназначено для удобного редактирования списка серверов клиентов.
 
-## Setup
+## Особенности приложения
+- Используется UI фреймворк Tailwind для создания современного и адаптивного интерфейса.
+- Интерфейс приложения состоит из списка серверов слева и формы редактирования справа, что обеспечивает удобную навигацию и редактирование.
+- Реализована базовая вёрстка страницы, обеспечивающая простоту использования и понимания.
 
-Make sure to install the dependencies:
+## Технологии
+- Nuxt.js для реализации серверного рендеринга и удобной настройки проекта.
+- Vue 3 composition API для эффективной организации логики компонентов.
+- Tailwind для быстрой и гибкой стилизации интерфейса.
 
-```bash
-# npm
-npm install
+## Как использовать
+1. Установите зависимости: npm install
+2. Запустите приложение: npm run dev
+3. Откройте браузер и перейдите по адресу, указанному в консоли.
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Наслаждайтесь удобным редактированием списка серверов клиентов с помощью этого приложения!
