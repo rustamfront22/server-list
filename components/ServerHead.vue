@@ -1,6 +1,8 @@
 <template>
   <div class="flex items-center justify-between px-4 py-4 text-xl font-bold text-gray-500 border-b border-gray-300">
-    Список серверов
+    <span class="block whitespace-nowrap pr-4">
+      Список серверов
+    </span>
     <button
         class="flex gap-2 items-center px-4 py-2 text-xl font-bold text-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200"
         @click="$emit('addServer')"

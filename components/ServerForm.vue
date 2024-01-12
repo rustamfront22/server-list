@@ -1,5 +1,5 @@
 <template>
-  <form class="flex flex-col items-center justify-center h-full p-20">
+  <form class="flex flex-col items-center justify-center h-full lg:p-20 p-5">
     <blockquote class=" font-bold text-gray-500 mb-6">
       <h2 class="text-2xl mb-6">
         Редактирование сервера

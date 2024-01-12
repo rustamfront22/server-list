@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-cols-[1fr,2fr] gap-4 border h-[100vh]" v-if="db && db.length">
-    <div class="border-r border-gray-300">
+  <div class="grid md:grid-cols-[1fr,2fr] grid-cols-1 gap-4 border h-[100vh]" v-if="db && db.length">
+    <div class="border-r border-gray-300 bg-white max-md:fixed max-md:left-[-377px] max-md:hover:-left-0 transition-all">
       <ServerHead @addServer="addServer" />
       <ServerList
           :servers="db"
@@ -8,6 +8,11 @@
           @select-server="selectServer"
           @delete-server="db.splice(db.findIndex((item) => item.customer_id === $event.customer_id), 1)"
       />
+      <div class="md:hidden absolute top-2 -right-12 w-10 h-10 flex items-center justify-center cursor-pointer text-gray-400 hover:text-gray-500 border rounded-lg border-gray-300 hover:border-gray-400 transition-all">
+        <svg width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 6.5h15M4.5 12h15m-15 5.5h15"/>
+        </svg>
+      </div>
     </div>
     <ServerForm
         v-if="currentServer"
